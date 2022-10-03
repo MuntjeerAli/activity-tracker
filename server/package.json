@@ -1,0 +1,25 @@
+{
+  "name": "activity-tracker-server",
+  "version": "1.0.0",
+  "description": "This is an activity tracker application",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "description",
+    "request",
+    "tracker"
+  ],
+  "author": "Muntjeer Sayyad",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.3"
+  }
+}
