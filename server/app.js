@@ -15,6 +15,8 @@ app.get("/", (req, res) => {
     res.send("<h1>Activity Manager Application</h1>");
 });
 
+app.use("/api/v1/tasks", tasks);
+
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => 
     app.listen(PORT, () => {
         console.log(`Server is running in: http://localhost:${PORT}`)

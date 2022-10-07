@@ -11,7 +11,9 @@ export const createTask = (req, res) => {
         name: name,
         completed: completed
     });
-    newTask.save().then(() => res.status(201).json({"success": true, "message": {newTask}})).catch((error) => res.json({"success" : false, "message" : `${err}`}))
+    newTask.save()
+    .then(() => res.status(201).json({"success": true, "message": {newTask}}))
+    .catch((error) => res.json({"success" : false, "message" : `${err}`}))
 }
 
 export const updateTask = () =>{}
